@@ -181,20 +181,11 @@
 </footer>
 
 <script>
-  function sendEmail() {
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const vehicle = document.getElementById('vehicle').value;
-    const service = document.getElementById('service').value;
-
-    const subject = encodeURIComponent('Diesel Repair Service Request');
-    const body = encodeURIComponent(
-      'Name: ' + name + '\n' +
-      'Phone: ' + phone + '\n' +
-      'Vehicle: ' + vehicle + '\n\n' +
-      'Service Requested:\n' + service
-    );
-
-    window.location.href = `mailto:fastsacrepair@gmail.com?subject=${subject}&body=${body}`;
-  }
+  <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="85feecc5-7e70-4915-aa94-80faa8961ae6">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
 </script>
