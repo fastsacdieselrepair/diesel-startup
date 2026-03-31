@@ -1,8 +1,3 @@
----
-layout: default
-title: Fast Sac Diesel Repair
----
-
 <style>
   body {
     font-family: Arial, sans-serif;
